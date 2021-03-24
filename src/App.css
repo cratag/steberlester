@@ -1,3 +1,10 @@
 .navbarsteber{
     color: brown
 }
+
+.logo{
+    max-width: 50%;
+    align-self: center;
+    opacity: 50%;
+    margin-bottom: 2em;
+}
