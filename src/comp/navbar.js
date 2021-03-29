@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../App.css';
-import {Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap'
+import {Navbar, Nav} from 'react-bootstrap'
 
 import logo from "../assets/logo.png"
 export default function navbar() {
@@ -9,9 +9,9 @@ export default function navbar() {
     <Navbar bg="dark" variant="dark" className="d-flex flex-row">
     <Navbar.Brand href="#home"><img src={logo} alt=""></img> <span style={{fontWeight: 'bold'}}> Steber Lester S.R.L</span></Navbar.Brand>
     <Nav>
-      <Nav.Link href="#home">Productos</Nav.Link>
-      <Nav.Link href="#features">¿Quienes somos?</Nav.Link>
-      <Nav.Link href="#pricing">Contacto</Nav.Link>
+      <Nav.Link href="#home" className="navbar-text">Productos</Nav.Link>
+      <Nav.Link href="#features" className="navbar-text">¿Quienes somos?</Nav.Link>
+      <Nav.Link href="#pricing" className="navbar-text">Contacto</Nav.Link>
     </Nav>
     
 {/*     <Form inline>
