@@ -12,7 +12,36 @@ import varios from "./assets/servicios/cleaning-products.svg"
 import sponge from "./assets/servicios/sponge.svg"
 import brush from "./assets/servicios/brush.svg"
 
-function App() {
+import {BrowserRouter as Router,Switch,Route, Link} from "react-router-dom";
+
+export default function App() {     
+  return (
+  <Router>
+        <div>
+          <Switch>
+  
+            <Route path="/products">
+              <Products />
+            </Route>
+  
+            <Route path="/about">
+              <About />
+            </Route>
+  
+            <Route path="/contact">
+              <Contact />
+            </Route>
+  
+            <Route path="/">
+              <Home />
+            </Route>
+  
+          </Switch>
+        </div>
+      </Router>
+  );}
+
+function Home() {
   return (
     <div>
     {navbar()}
@@ -63,5 +92,31 @@ function App() {
   );
 }
 
-export default App;
+function Products() {
+  return (
+    <div>
+    {navbar()}
+    <h1>"Hello Products"</h1>
+    </div>
+  );
+};
+
+function Contact() {
+  return (
+    <div>
+    {navbar()}
+    <h1>"Hello Contact"</h1>
+    </div>
+  );
+};
+
+function About() {
+  return (
+    <div>
+    {navbar()}
+    <h1>"Hello About"</h1>
+    </div>
+  );
+};
+
 // https://mauritomeluso.wixsite.com/steberlester

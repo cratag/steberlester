@@ -77,3 +77,20 @@
 .navbar-text{
     color: rgb(241, 252, 168) !important;
 }
+
+.navbar-link{
+    text-decoration: none;
+}
+
+.navbar-link:hover{
+    text-decoration: none;
+    color: #d9ef4d !important
+}
+
+.logo-border{
+    color: #fff
+    }
+.logo-border:hover{
+    color: #fff !important;
+    filter: drop-shadow(0 0 0.1rem #d9ef4d);
+    }
